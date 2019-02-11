@@ -1,6 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100i,400,600');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 body{
-
+	font-family: 'Dancing Script', cursive;
+	background-color: #02010a;
+}
+.contenido{
+	width: 100%;
+	margin: 0 auto;
+}
+@media (min-width: 900px) {
+	.contenido {
+		width: 900px;
+		margin: 0 auto;
+	}
 }
 header h1{
 	background-color: #5b7989;
@@ -16,21 +27,21 @@ header h1{
 }
 a{
 	text-decoration: underline;
-	font-family: 'Raleway-thin';
+	font-family: 'Dancing Script', cursive;
 	font-size:0.95em;
 	color: #5b7989;
 }
 a:hover{
-	font-family: 'Raleway-bold';
+	font-family: 'Dancing Script', cursive;
 	font-size:0.95em;
 	text-decoration: none;
-	color: #02010a;
+	color: #fff;
 }
 .activo{
-	font-family: 'Raleway-bold';
+	font-family: 'Dancing Script', cursive;
 	font-size:0.95em;
 	text-decoration: none;
-	color: #02010a;
+	color: #fff;
 
 }
 #imagen_central{
@@ -38,26 +49,46 @@ a:hover{
 	padding: 12px 12px;
 	text-align: center;
 	background-color: #82c3a6;
+	border-radius: 10px 10px 0 0;
 }
-#contenido{
+img{
+	box-shadow: 2px 5px 5px #02010a;
+}
+#imagenes{
 	background-color:  #d5c75f;
-	border: 1px solid #000;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	padding: 5px 5px;
-	margin:0 auto;
-	
+	-webkit-flex-flow: wrap;
+	flex-flow: wrap;
+	padding: 25px 25px;
+	margin:0 auto;	
 }
 @media (min-width: 600px) {
 	.img1, .img2 {
 		width: 50%;
-		margin: 0 auto;
 	}
 }
-
-
+#pie{
+	background-color: #C6d5c5;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin:0 auto;	
+	border-radius: 0 0 10px 10px;
+}
+.contacto, .terminos, .redes, .derechos {
+	width: 100%;
+	text-align: center;
+}
+@media (min-width: 800px) {
+	.contacto, .terminos, .redes, .derechos {
+		width: 25%;
+		text-align: center;
+	}
+}
 
 
 
