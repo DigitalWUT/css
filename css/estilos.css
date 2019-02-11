@@ -61,11 +61,23 @@ img{
 	-webkit-flex-flow: wrap;
 	flex-flow: wrap;
 	padding: 25px 25px;
-	margin:0 auto;	
+}
+.contenedor_img{
+	width: 100%;
+}
+.img1{
+	text-align: center;
+	width: 98%;
+	margin-bottom: 20px;
+}
+.img2{
+	text-align: center;
+	width: 98%;
 }
 @media (min-width: 600px) {
-	.img1, .img2 {
+	.contenedor_img {
 		width: 50%;
+		
 	}
 }
 #pie{
