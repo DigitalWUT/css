@@ -7,12 +7,6 @@ body{
 	width: 100%;
 	margin: 0 auto;
 }
-@media (min-width: 900px) {
-	.contenido {
-		width: 900px;
-		margin: 0 auto;
-	}
-}
 header h1{
 	background-color: #5b7989;
 	color: #fff;
@@ -21,8 +15,49 @@ header h1{
 	border-radius: 10px 10px;
 	padding-left: 20px;
 }
+@media (min-width: 900px) {
+	.contenido {
+		width: 900px;
+		margin: 0 auto;
+	}
+	.header h1 {
+		width: 100%;
+		text-align: center;
+	}
+	#menu{
+		text-align: center;
+	}	
+	.img1, .img2{
+		text-align: center;
+		width: 50%;
+		margin-bottom: 20px;
+	}
+	.contacto, .terminos, .redes, .derechos {
+		width: 25%;
+		text-align: center;
+	}
+}
+@media (max-width: 899px) {
+	.contacto, .terminos, .redes, .derechos {
+		width: 100%;
+		text-align: center;
+	}
+	.imagenes{
+		background-color: #d5c75f;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+	}
+	.img1, .img2{
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
 #menu{
 	text-align: right;
+	margin-top: 2px;
 	padding-right: 20px;
 }
 a{
@@ -54,33 +89,24 @@ a:hover{
 img{
 	box-shadow: 2px 5px 5px #02010a;
 }
-#imagenes{
+.imagenes{
 	background-color:  #d5c75f;
 	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-flow: wrap;
-	flex-flow: wrap;
-	padding: 25px 25px;
-}
-.contenedor_img{
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 4px 0;
 	width: 100%;
 }
-.img1{
-	text-align: center;
-	width: 98%;
-	margin-bottom: 20px;
+
+.imagenes div {
+	box-sizing: border-box;
+	min-width: 150px;
+	padding: 25px;
 }
-.img2{
-	text-align: center;
-	width: 98%;
-	margin-bottom: 20px;
-}
-@media (min-width: 600px) {
-	.contenedor_img {
-		width: 50%;
-		
-	}
-}
+
+
 #pie{
 	background-color: #C6d5c5;
 	display: -webkit-flex;
@@ -91,16 +117,6 @@ img{
 	padding-bottom: 20px;
 	margin:0 auto;	
 	border-radius: 0 0 10px 10px;
-}
-.contacto, .terminos, .redes, .derechos {
-	width: 100%;
-	text-align: center;
-}
-@media (min-width: 800px) {
-	.contacto, .terminos, .redes, .derechos {
-		width: 25%;
-		text-align: center;
-	}
 }
 label{
 	text-decoration: underline;
